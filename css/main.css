@@ -1,0 +1,72 @@
+body {
+	text-shadow: 2.5px 2.5px #000000;
+	overflow: hidden;
+	height: calc(100vh - 8em);
+	padding: 4em;
+	color: rgba(255, 255, 255, .75);
+	font-family: 'Arial';
+	background-color: rgb(7, 30, 56);
+	width: 100%;
+	min-height: 100%;
+}
+
+.cont {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.anim-typewriter {
+	animation: typewriter 6s steps(44) 2s 1 normal both, blinkTextCursor 600ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 24em;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, .75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
+h1 {
+	font-size: 5vw;
+	font-family: 'Arial';
+	letter-spacing: -0.035vw;
+	font-weight: 900;
+	line-height: 5vw;
+	margin: 0;
+}
+
+p {
+	color: #FFFFFF;
+	margin: 0;
+	font-family: 'Arial';
+	font-weight: 100;
+	letter-spacing: 0.15vw;
+	transition: 0.5s;
+	font-size: 1.4vw;
+}
+
+a {
+	color: #FFFFFF;
+	font-family: 'Arial';
+	letter-spacing: 0.15vw;
+	transition: 0.5s;
+	text-decoration: none;
+}
